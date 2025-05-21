@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './AddNotePage.css'
-import { useNavigate } from 'react-router-dom'
+import { redirect, useNavigate } from 'react-router-dom'
 
 const AddNotePage = ({addNote}) => {
   const[title,setTitle] = useState("")
@@ -21,7 +21,7 @@ const AddNotePage = ({addNote}) => {
        return;
     }
       addNote(newNote)
-      navigate("/")
+      redirect("/")
       console.log(newNote)
   }
 
