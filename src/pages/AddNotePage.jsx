@@ -22,7 +22,6 @@ const AddNotePage = ({addNote}) => {
     }
       addNote(newNote)
       navigate("/")
-      redirect("/")
       console.log(newNote)
   }
 
